@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Goutham K Krishnan — Engineering portfolio showcasing AI systems, machine learning, and scalable software architecture.">
+    <meta property="og:title" content="Goutham K Krishnan — Portfolio">
+    <meta property="og:description" content="Engineering Student at BITS Pilani — AI, Systems, Software Engineering">
+    <meta property="og:type" content="website">
+    <title>Goutham K Krishnan — Portfolio</title>
+    <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- Multi-Layered Data & Software Scenery Background -->
+    <canvas id="scenery-canvas"></canvas>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-text">GK</div>
+            <div class="preloader-bar"><div class="preloader-progress"></div></div>
+        </div>
+    </div>
+
+    <!-- Cursor Glow -->
+    <div id="cursor-glow"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">GK</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="nav-link active" data-section="hero">Home</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+                <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+                <li><a href="#research" class="nav-link" data-section="research">Research</a></li>
+                <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+                <li><a href="#achievements" class="nav-link" data-section="achievements">Achievements</a></li>
+                <li><a href="#resume" class="nav-link" data-section="resume">Resume</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO ==================== -->
+    <section id="hero" class="section section-hero">
+        <div class="hero-bg-gradient"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-name" data-animate="split">Goutham K Krishnan</h1>
+                <p class="hero-title anim-fade-up">Engineering Student at BITS Pilani</p>
+                <p class="hero-specializations anim-fade-up">AI &bull; Systems &bull; Software Engineering</p>
+                <p class="hero-tagline anim-fade-up">Building intelligent systems, scalable software, and tools that solve real problems.</p>
+                <div class="hero-intro anim-fade-up">
+                    <p>I am an engineering student at BITS Pilani with a strong interest in artificial intelligence, distributed systems, and data-driven software engineering. My work focuses on designing systems from first principles and building practical solutions that combine machine learning, scalable infrastructure, and thoughtful software architecture.</p>
+                </div>
+                <div class="hero-tech-tags anim-fade-up">
+                    <span class="tech-pill">Python</span>
+                    <span class="tech-pill">Machine Learning</span>
+                    <span class="tech-pill">AI Agents</span>
+                    <span class="tech-pill">Distributed Systems</span>
+                    <span class="tech-pill">Data Engineering</span>
+                </div>
+                <div class="hero-cta anim-fade-up">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#research" class="btn btn-secondary">View Research</a>
+                    <a href="assets/resume/resume.pdf" class="btn btn-secondary" download>Download Resume</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-visual anim-fade-up">
+                <div class="hero-visual-inner">
+                    <div class="hero-photo-ring ring-1"></div>
+                    <div class="hero-photo-ring ring-2"></div>
+                    <div class="hero-photo-ring ring-3"></div>
+                    <div class="hero-photo-glow"></div>
+                    <div class="hero-photo-wrap" data-tilt>
+                        <img src="assets/images/hero.jpg" alt="Goutham K Krishnan" class="hero-photo">
+                    </div>
+                    <canvas id="hero-particles"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section id="about" class="section section-about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <div class="section-header">
+                        <h2 class="section-title reveal-text">About Me</h2>
+                        <p class="section-subtitle reveal-text">Curiosity-driven engineer exploring intelligent systems and scalable software.</p>
+                    </div>
+                    <div class="about-text reveal-text">
+                        <p>I am an engineering student at BITS Pilani with a strong interest in artificial intelligence systems, machine learning, and scalable software engineering.</p>
+                        <p>What excites me most about technology is the process of turning ideas into working systems. I enjoy understanding how complex systems function internally — from machine learning models and intelligent agents to distributed infrastructures that power modern applications.</p>
+                        <p>My work often explores how different layers of technology can work together. I am particularly interested in building systems that combine machine learning for intelligent decision making, data engineering for reliable pipelines, intelligent automation through AI-driven workflows, and robust software architecture for maintainable systems.</p>
+                        <p>I enjoy working at the intersection of research and engineering, where theoretical ideas evolve into practical systems that can solve real-world problems.</p>
+                    </div>
+                    <p class="about-quote reveal-text"><em>I enjoy building systems that combine intelligent algorithms with reliable software engineering.</em></p>
+                </div>
+                <div class="about-cards">
+                    <div class="interest-card reveal-card" data-delay="0">
+                        <div class="interest-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 1 4 4c0 1.95-1.4 3.58-3.25 3.93L12 22"/><path d="M8 6a4 4 0 0 1 8 0"/><circle cx="12" cy="6" r="1"/><path d="M7 14l-2 4"/><path d="M17 14l2 4"/><path d="M9 18h6"/></svg>
+                        </div>
+                        <h3>AI Agents &amp; Autonomous Systems</h3>
+                        <p>Designing intelligent systems capable of reasoning, planning, and interacting with tools to accomplish complex tasks.</p>
+                    </div>
+                    <div class="interest-card reveal-card" data-delay="1">
+                        <div class="interest-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 16l4-8 4 5 4-9"/></svg>
+                        </div>
+                        <h3>Machine Learning Applications</h3>
+                        <p>Applying machine learning models to real-world problems with focus on reliability, interpretability, and system integration.</p>
+                    </div>
+                    <div class="interest-card reveal-card" data-delay="2">
+                        <div class="interest-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="6" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="12" cy="18" r="2"/><path d="M5 8v2a4 4 0 0 0 4 4h2"/><path d="M19 8v2a4 4 0 0 1-4 4h-2"/></svg>
+                        </div>
+                        <h3>Distributed Computing</h3>
+                        <p>Understanding how large-scale systems manage computation, data, and reliability across multiple machines.</p>
+                    </div>
+                    <div class="interest-card reveal-card" data-delay="3">
+                        <div class="interest-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"/></svg>
+                        </div>
+                        <h3>Data Infrastructure</h3>
+                        <p>Building pipelines and tools that transform raw data into meaningful insights and intelligent applications.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SKILLS ==================== -->
+    <section id="skills" class="section section-skills">
+        <div class="container">
+            <div class="section-header center">
+                <h2 class="section-title reveal-text">Skills &amp; Technology Stack</h2>
+                <p class="section-subtitle reveal-text">Technologies and tools I use to design, build, and deploy intelligent systems.</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card reveal-card" data-delay="0">
+                    <div class="skill-card-header">
+                        <div class="skill-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+                        </div>
+                        <h3>Programming</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C / C++</span>
+                        <span class="skill-tag">JavaScript / TypeScript</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal-card" data-delay="1">
+                    <div class="skill-card-header">
+                        <div class="skill-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 1 4 4c0 1.95-1.4 3.58-3.25 3.93L12 22"/><path d="M8 6a4 4 0 0 1 8 0"/><circle cx="12" cy="6" r="1"/></svg>
+                        </div>
+                        <h3>AI &amp; Machine Learning</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">NLP / Deep Learning</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal-card" data-delay="2">
+                    <div class="skill-card-header">
+                        <div class="skill-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        </div>
+                        <h3>Software Development</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">React / Next.js</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">System Design</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal-card" data-delay="3">
+                    <div class="skill-card-header">
+                        <div class="skill-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"/></svg>
+                        </div>
+                        <h3>Data &amp; Infrastructure</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Data Pipelines</span>
+                        <span class="skill-tag">Data Analytics</span>
+                        <span class="skill-tag">Cloud Deployment</span>
+                        <span class="skill-tag">Databases</span>
+                    </div>
+                </div>
+                <div class="skill-card skill-card-wide reveal-card" data-delay="4">
+                    <div class="skill-card-header">
+                        <div class="skill-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                        </div>
+                        <h3>Tools &amp; Engineering Workflow</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git / GitHub</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">CI/CD Workflows</span>
+                    </div>
+                </div>
+            </div>
+            <p class="section-footnote reveal-text">I enjoy learning new tools quickly and selecting technologies based on the problem being solved rather than trends.</p>
+        </div>
+    </section>
+
+    <!-- ==================== PROJECTS ==================== -->
+    <section id="projects" class="section section-projects">
+        <div class="container">
+            <div class="section-header center">
+                <h2 class="section-title reveal-text">Projects</h2>
+                <p class="section-subtitle reveal-text">Selected systems and applications I have designed and built.</p>
+            </div>
+
+            <!-- Filter -->
+            <div class="project-filters reveal-text">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ai">AI</button>
+                <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                <button class="filter-btn" data-filter="data">Data Engineering</button>
+                <button class="filter-btn" data-filter="web">Web Systems</button>
+            </div>
+
+            <div class="projects-list">
+                <!-- Project 1 -->
+                <div class="project-card reveal-card" data-categories="ai" data-project="0">
+                    <div class="project-image">
+                        <img src="https://picsum.photos/seed/aiagent/800/400" alt="AI Agent System architecture diagram" loading="lazy">
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">AI Agent System</h3>
+                        <p class="project-overview">Built an intelligent agent framework capable of autonomous task execution using LLM-based reasoning and tool integration.</p>
+                        <div class="project-section">
+                            <span class="project-label">Problem</span>
+                            <p>Traditional automation systems rely on rigid workflows requiring predefined steps. The challenge was to design a system that could reason dynamically, break tasks into subtasks, and interact with tools autonomously.</p>
+                        </div>
+                        <div class="project-section">
+                            <span class="project-label">Approach</span>
+                            <p>Designed around a reasoning and execution loop with LLM integration for reasoning, tool usage through APIs, contextual memory for multi-step tasks, and a modular agent pipeline for extensibility.</p>
+                        </div>
+                        <div class="project-section">
+                            <span class="project-label">Features</span>
+                            <ul>
+                                <li>Multi-step reasoning workflow for complex tasks</li>
+                                <li>Integration with external APIs and tools</li>
+                                <li>Memory-based planning for contextual decision making</li>
+                                <li>Modular architecture for extensibility</li>
+                            </ul>
+                        </div>
+                        <div class="project-section">
+                            <span class="project-label">Technologies</span>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">LangChain</span>
+                                <span class="tech-tag">OpenAI APIs</span>
+                                <span class="tech-tag">Vector Databases</span>
+                                <span class="tech-tag">REST APIs</span>
+                            </div>
+                        </div>
+                        <div class="project-section">
+                            <span class="project-label">Results</span>
+                            <p>The framework demonstrated the ability to interpret complex instructions, plan multi-step actions, and interact with external tools — serving as a foundation for AI-driven automation experiments.</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-primary btn-sm">View Code</a>
+                            <a href="#" class="btn btn-secondary btn-sm">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card reveal-card" data-categories="ml" data-project="1">
+                    <div class="project-image">
+                        <img src="https://picsum.photos/seed/mlpipeline/800/400" alt="ML Pipeline visualization" loading="lazy">
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Machine Learning Prediction Model</h3>
+                        <p class="project-overview">Developed a machine learning pipeline capable of analyzing structured datasets and predicting key outcomes using statistical models and neural networks.</p>
+                        <div class="project-section">
+                            <span class="project-label">Problem</span>
+                            <p>Real-world datasets require extensive preprocessing and feature engineering before useful predictive models can be built. The challenge was designing a pipeline that could transform raw data into reliable predictions while maintaining interpretability.</p>
+                        </div>
+                        <div class="project-section">
+                            <span class="project-label">Approach</span>
+                            <p>Structured as a modular ML pipeline with stages for data preprocessing, feature engineering, model training, and evaluation — enabling repeatable experimentation and model optimization.</p>
+                        </div>
+                        <div class="project-section">
+                            <span class="project-label">Features</span>
+                            <ul>
+                                <li>Automated data preprocessing and transformation</li>
+                                <li>Feature engineering pipeline for improved performance</li>
+                                <li>Model training and evaluation using multiple algorithms</li>
+                                <li>Performance analysis using validation metrics</li>
+                            </ul>
+                        </div>
+                        <div class="project-section">
+                            <span class="project-label">Technologies</span>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">scikit-learn</span>
+                                <span class="tech-tag">pandas</span>
+                                <span class="tech-tag">NumPy</span>
+                                <span class="tech-tag">matplotlib</span>
+                            </div>
+                        </div>
+                        <div class="project-section">
+                            <span class="project-label">Results</span>
+                            <p>Demonstrated how structured data pipelines improve model performance and reproducibility while enabling efficient experimentation with multiple ML models.</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-primary btn-sm">View Code</a>
+                            <a href="#" class="btn btn-secondary btn-sm">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card reveal-card" data-categories="data web" data-project="2">
+                    <div class="project-image">
+                        <img src="https://picsum.photos/seed/dataplatform/800/400" alt="Data Analytics Platform dashboard" loading="lazy">
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Data Analytics Platform</h3>
+                        <p class="project-overview">Built a data analytics platform that processes large datasets and presents insights through interactive dashboards and real-time visualizations.</p>
+                        <div class="project-section">
+                            <span class="project-label">Problem</span>
+                            <p>Organizations often struggle to transform raw datasets into meaningful insights. The challenge was designing a system that could process and visualize complex data in an intuitive and interactive interface.</p>
+                        </div>
+                        <div class="project-section">
+                            <span class="project-label">Approach</span>
+                            <p>Designed with a frontend dashboard connected to a data processing backend, featuring aggregation, transformation, interactive visualizations, and a responsive UI for user interaction.</p>
+                        </div>
+                        <div class="project-section">
+                            <span class="project-label">Features</span>
+                            <ul>
+                                <li>Interactive data visualizations</li>
+                                <li>Real-time analytics dashboards</li>
+                                <li>Data aggregation and processing pipelines</li>
+                                <li>Intuitive user interface for exploring datasets</li>
+                            </ul>
+                        </div>
+                        <div class="project-section">
+                            <span class="project-label">Technologies</span>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Plotly</span>
+                                <span class="tech-tag">SQL</span>
+                                <span class="tech-tag">REST APIs</span>
+                            </div>
+                        </div>
+                        <div class="project-section">
+                            <span class="project-label">Results</span>
+                            <p>The platform enabled real-time data visualization and analysis, providing intuitive tools for exploring and understanding complex datasets.</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-primary btn-sm">View Code</a>
+                            <a href="#" class="btn btn-secondary btn-sm">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-cta reveal-text">
+                <p>More experiments and prototypes can be found on my GitHub.</p>
+                <a href="#" class="btn btn-secondary">Explore GitHub &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== RESEARCH ==================== -->
+    <section id="research" class="section section-research">
+        <div class="container">
+            <div class="section-header center">
+                <h2 class="section-title reveal-text">Research &amp; AI Work</h2>
+                <p class="section-subtitle reveal-text">Exploring intelligent systems, machine learning infrastructure, and data-driven intelligence.</p>
+            </div>
+            <div class="research-grid">
+                <div class="research-card reveal-card" data-delay="0">
+                    <div class="research-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 1 4 4c0 1.95-1.4 3.58-3.25 3.93L12 22"/><path d="M8 6a4 4 0 0 1 8 0"/><circle cx="12" cy="6" r="1"/><path d="M7 14l-2 4"/><path d="M17 14l2 4"/><path d="M9 18h6"/></svg>
+                    </div>
+                    <h3>AI Agents &amp; Autonomous Systems</h3>
+                    <p class="research-overview">Exploring how AI agents can perform multi-step reasoning, decision-making, and tool-based problem solving.</p>
+                    <ul class="research-topics">
+                        <li><strong>Agent Architectures</strong> — LLMs as reasoning engines for planning sequences of actions</li>
+                        <li><strong>Tool Integration</strong> — Agent interaction with APIs, databases, and computational tools</li>
+                        <li><strong>Memory Systems</strong> — Contextual information storage and retrieval across tasks</li>
+                        <li><strong>Autonomous Workflows</strong> — Dynamic planning and execution of complex workflows</li>
+                    </ul>
+                </div>
+                <div class="research-card reveal-card" data-delay="1">
+                    <div class="research-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M15 2v2"/><path d="M15 20v2"/><path d="M2 15h2"/><path d="M20 15h2"/><path d="M9 2v2"/><path d="M9 20v2"/><path d="M2 9h2"/><path d="M20 9h2"/></svg>
+                    </div>
+                    <h3>Machine Learning Systems</h3>
+                    <p class="research-overview">Exploring how ML models can be trained, optimized, and deployed efficiently at scale.</p>
+                    <ul class="research-topics">
+                        <li><strong>Training Pipelines</strong> — Reproducible preprocessing, feature engineering, and evaluation</li>
+                        <li><strong>Model Optimization</strong> — Hyperparameter tuning, regularization, architecture design</li>
+                        <li><strong>Scalable Infrastructure</strong> — Distributed training and cloud infrastructure</li>
+                        <li><strong>Experimentation Frameworks</strong> — Iterative experimentation and model comparison</li>
+                    </ul>
+                </div>
+                <div class="research-card reveal-card" data-delay="2">
+                    <div class="research-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"/></svg>
+                    </div>
+                    <h3>Data Intelligence</h3>
+                    <p class="research-overview">Investigating how data can be transformed into meaningful intelligence at scale.</p>
+                    <ul class="research-topics">
+                        <li><strong>Large-Scale Data Processing</strong> — Transforming raw data into analyzable formats</li>
+                        <li><strong>Analytics Systems</strong> — Visualizations and statistical analysis tools</li>
+                        <li><strong>Intelligent Data Apps</strong> — ML models combined with analytics systems</li>
+                        <li><strong>Data Infrastructure</strong> — Modern large-scale data management platforms</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Research Timeline -->
+            <div class="research-timeline reveal-text">
+                <h3 class="timeline-heading">Research Timeline</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2025</span>
+                            <h4>AI Agent Experiment</h4>
+                            <p>Developed a prototype autonomous agent capable of planning tasks using LLM-based reasoning.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2024</span>
+                            <h4>Machine Learning Pipeline</h4>
+                            <p>Built an end-to-end ML workflow for predictive modeling with automated feature engineering.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2024</span>
+                            <h4>Data Analytics Dashboard</h4>
+                            <p>Designed a system for interactive data visualization with real-time processing capabilities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="section-footnote research-quote reveal-text"><em>I view research as a way to explore the boundaries of what intelligent systems can do and how they can be engineered responsibly.</em></p>
+        </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE ==================== -->
+    <section id="experience" class="section section-experience">
+        <div class="container">
+            <div class="section-header center">
+                <h2 class="section-title reveal-text">Professional Experience</h2>
+                <p class="section-subtitle reveal-text">Building scalable backend systems, data pipelines, and intelligent applications in production environments.</p>
+            </div>
+            <p class="experience-statement reveal-text">My experience focuses on building reliable backend systems, integrating data pipelines, and applying machine learning to real-world infrastructure problems.</p>
+
+            <div class="experience-timeline">
+                <div class="exp-timeline-line"></div>
+
+                <div class="experience-card reveal-card" data-delay="0">
+                    <div class="exp-timeline-dot"></div>
+                    <div class="exp-card-inner">
+                        <div class="exp-header">
+                            <div>
+                                <h3>Software Engineer</h3>
+                                <p class="exp-company">GadgEon Smart Systems — Kochi, India</p>
+                            </div>
+                            <span class="exp-date">Jan 2024 — Present</span>
+                        </div>
+                        <p class="exp-overview">Backend-focused software engineer developing Python-based services, real-time data processing systems, and scalable APIs for enterprise applications in the railway and infrastructure domain.</p>
+                        <div class="exp-contributions">
+                            <div class="exp-contribution">
+                                <h4>Backend API Development</h4>
+                                <p>Designed scalable backend services using Python and Flask, transitioning legacy modules into modular REST APIs with OAuth and JWT authentication.</p>
+                            </div>
+                            <div class="exp-contribution">
+                                <h4>Data Processing Pipelines</h4>
+                                <p>Engineered data workflows for processing large-scale railway asset datasets using MongoDB and CrateDB. Optimized queries to significantly reduce latency.</p>
+                            </div>
+                            <div class="exp-contribution">
+                                <h4>Machine Learning Integration</h4>
+                                <p>Collaborated on ML initiatives analyzing real-time telemetry data from railway infrastructure for predictive maintenance systems.</p>
+                            </div>
+                            <div class="exp-contribution">
+                                <h4>Infrastructure &amp; Deployment</h4>
+                                <p>Deployed and maintained backend services in Linux-based environments using Docker and Kubernetes for scalable deployment.</p>
+                            </div>
+                        </div>
+                        <div class="exp-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">CrateDB</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Kubernetes</span>
+                            <span class="tech-tag">Linux</span>
+                            <span class="tech-tag">REST APIs</span>
+                            <span class="tech-tag">Azure Cloud</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-card reveal-card" data-delay="1">
+                    <div class="exp-timeline-dot"></div>
+                    <div class="exp-card-inner">
+                        <div class="exp-header">
+                            <div>
+                                <h3>.NET Intern</h3>
+                                <p class="exp-company">Orion Innovations</p>
+                            </div>
+                            <span class="exp-date">Mar 2023 — May 2023</span>
+                        </div>
+                        <p class="exp-overview">Backend development intern contributing to internal enterprise web applications and gaining hands-on experience with software development lifecycles.</p>
+                        <div class="exp-contributions">
+                            <div class="exp-contribution">
+                                <h4>Backend Development</h4>
+                                <p>Developed backend components supporting internal business applications and implemented database operations for data-driven features.</p>
+                            </div>
+                            <div class="exp-contribution">
+                                <h4>Database Optimization</h4>
+                                <p>Improved query efficiency and optimized data retrieval logic for internal systems.</p>
+                            </div>
+                        </div>
+                        <div class="exp-tech">
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">ASP.NET</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">Git</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ACHIEVEMENTS ==================== -->
+    <section id="achievements" class="section section-achievements">
+        <div class="container">
+            <div class="section-header center">
+                <h2 class="section-title reveal-text">Achievements &amp; Leadership</h2>
+                <p class="section-subtitle reveal-text">Milestones, recognitions, and initiatives that shaped my engineering and leadership journey.</p>
+            </div>
+
+            <div class="achievements-timeline">
+                <div class="ach-timeline-line"></div>
+
+                <div class="achievement-card ach-highlight reveal-card" data-delay="0">
+                    <div class="ach-timeline-dot"></div>
+                    <div class="ach-card-inner">
+                        <div class="ach-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+                        </div>
+                        <span class="ach-year">2023</span>
+                        <h3>IEEE HAC / SIGHT Funded Project Lead</h3>
+                        <p class="ach-org">SIGHT Gramina Digital Hub — $4,000 Grant</p>
+                        <p>Led a technical initiative funded by IEEE HAC / SIGHT to establish the SIGHT Gramina Digital Hub, aimed at improving digital literacy and technical skills within underserved communities.</p>
+                    </div>
+                </div>
+                <div class="achievement-card reveal-card" data-delay="1">
+                    <div class="ach-timeline-dot"></div>
+                    <div class="ach-card-inner">
+                        <div class="ach-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
+                        <span class="ach-year">2023</span>
+                        <h3>Joint Convener</h3>
+                        <p class="ach-org">IHRD Tharang — National Techno-Entrepreneurial-Cultural Fest</p>
+                        <p>Coordinated event planning and logistics across multiple teams for a large-scale national event fostering innovation, entrepreneurship, and technical collaboration.</p>
+                    </div>
+                </div>
+                <div class="achievement-card reveal-card" data-delay="2">
+                    <div class="ach-timeline-dot"></div>
+                    <div class="ach-card-inner">
+                        <div class="ach-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5C7 4 6 9 6 9z"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5C17 4 18 9 18 9z"/><path d="M4 22h16"/><path d="M10 22V8a4 4 0 0 1 4-4h0a4 4 0 0 1 4 4v14"/><path d="M6 22V8a4 4 0 0 1 4-4"/></svg>
+                        </div>
+                        <span class="ach-year">2023</span>
+                        <h3>Runner-Up — Best Project in CS</h3>
+                        <p class="ach-org">SRISHTI 2023</p>
+                        <p>Recognized for developing a technically innovative project demonstrating strong engineering design, implementation depth, and real-world applicability.</p>
+                    </div>
+                </div>
+                <div class="achievement-card reveal-card" data-delay="3">
+                    <div class="ach-timeline-dot"></div>
+                    <div class="ach-card-inner">
+                        <div class="ach-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        </div>
+                        <span class="ach-year">2021</span>
+                        <h3>Best SIGHT Group of the Year</h3>
+                        <p class="ach-org">IEEE SIGHT Awards 2021</p>
+                        <p>Part of the team recognized for impactful humanitarian and community-driven initiatives in technology-driven social impact and collaborative engagement.</p>
+                    </div>
+                </div>
+            </div>
+            <p class="section-footnote reveal-text"><em>Leadership experiences have helped me understand that impactful technology is built not only through engineering skill, but also through collaboration, initiative, and community engagement.</em></p>
+        </div>
+    </section>
+
+    <!-- ==================== RESUME ==================== -->
+    <section id="resume" class="section section-resume">
+        <div class="container">
+            <div class="resume-grid">
+                <div class="resume-content reveal-text">
+                    <div class="section-header">
+                        <h2 class="section-title">Resume</h2>
+                        <p class="section-subtitle">A snapshot of my technical background, education, and engineering focus.</p>
+                    </div>
+                    <div class="resume-highlights">
+                        <div class="resume-block">
+                            <h4>Education</h4>
+                            <p><strong>M.Tech in Data Science and Engineering</strong><br>BITS Pilani (Work Integrated Learning Programme)</p>
+                            <p><strong>B.Tech in Computer Science and Engineering</strong></p>
+                        </div>
+                        <div class="resume-block">
+                            <h4>Engineering Focus</h4>
+                            <div class="resume-focus-tags">
+                                <span class="tech-pill">Artificial Intelligence</span>
+                                <span class="tech-pill">Machine Learning Systems</span>
+                                <span class="tech-pill">Backend Engineering</span>
+                                <span class="tech-pill">Data Infrastructure</span>
+                                <span class="tech-pill">Scalable Architecture</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume-card-wrap reveal-card">
+                    <div class="resume-download-card">
+                        <div class="resume-card-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
+                        </div>
+                        <h3>Download Full Resume</h3>
+                        <p class="resume-format">PDF — Updated 2026</p>
+                        <a href="assets/resume/resume.pdf" class="btn btn-primary" download>Download Resume</a>
+                        <div class="resume-secondary-links">
+                            <a href="#" class="btn btn-secondary btn-sm">View LinkedIn</a>
+                            <a href="#" class="btn btn-secondary btn-sm">View GitHub</a>
+                        </div>
+                        <span class="resume-updated">Last updated: 2026</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section id="contact" class="section section-contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-content reveal-text">
+                    <div class="section-header">
+                        <h2 class="section-title">Contact</h2>
+                        <p class="section-subtitle">Let's connect and build interesting things together.</p>
+                    </div>
+                    <p class="contact-message">I'm always interested in discussing ideas around artificial intelligence systems, machine learning research, and scalable software engineering. Whether it's a conversation about new technologies, collaboration on a project, or opportunities to build impactful systems, I'm always open to connecting.</p>
+                </div>
+                <div class="contact-cards">
+                    <a href="mailto:gouthamkkrishnan2024@gmail.com" class="contact-card reveal-card" data-delay="0">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
+                        </div>
+                        <h4>Email</h4>
+                        <p>gouthamkkrishnan2024@gmail.com</p>
+                        <span class="contact-action">Send Email &rarr;</span>
+                    </a>
+                    <a href="#" class="contact-card reveal-card" data-delay="1">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                        </div>
+                        <h4>GitHub</h4>
+                        <p>Explore repositories and projects</p>
+                        <span class="contact-action">View GitHub &rarr;</span>
+                    </a>
+                    <a href="#" class="contact-card reveal-card" data-delay="2">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                        </div>
+                        <h4>LinkedIn</h4>
+                        <p>Connect professionally</p>
+                        <span class="contact-action">Connect on LinkedIn &rarr;</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-wrap reveal-text">
+                <h3>Send a Message</h3>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-copy">&copy; 2026 Goutham K Krishnan</p>
+            <p class="footer-built">Built with HTML, CSS, JavaScript</p>
+            <p class="footer-tagline">Always curious about new ideas and systems worth building.</p>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="modal-overlay">
+        <div class="modal">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-body" id="modalBody"></div>
+            <div class="modal-nav">
+                <button class="modal-prev btn btn-secondary btn-sm">&larr; Previous</button>
+                <button class="modal-next btn btn-secondary btn-sm">Next &rarr;</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/scroll-effects.js"></script>
+    <script src="js/scenery.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

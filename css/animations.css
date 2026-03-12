@@ -1,0 +1,295 @@
+/* ===================================================
+   ANIMATIONS.CSS — Keyframes & Animation Classes
+   =================================================== */
+
+/* --- Spinning Rings around portrait --- */
+@keyframes spin-ring {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* --- Gradient shimmer --- */
+@keyframes gradient-shift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+.hero-bg-gradient {
+    animation: gradient-shift 15s ease infinite;
+    background-size: 200% 200%;
+}
+
+/* --- Pulse for timeline dots --- */
+@keyframes pulse-dot {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(0, 229, 255, 0.4); }
+    50% { box-shadow: 0 0 0 8px rgba(0, 229, 255, 0); }
+}
+.timeline-dot, .exp-timeline-dot, .ach-timeline-dot {
+    animation: pulse-dot 3s ease-in-out infinite;
+}
+
+/* --- Button Ripple --- */
+@keyframes ripple {
+    0% { transform: scale(0); opacity: 0.5; }
+    100% { transform: scale(4); opacity: 0; }
+}
+.btn-ripple {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.3);
+    pointer-events: none;
+    animation: ripple 0.6s ease-out forwards;
+}
+
+/* --- Glow Pulse on Cards --- */
+@keyframes glow-pulse {
+    0%, 100% { box-shadow: 0 0 20px rgba(0,229,255,0); }
+    50% { box-shadow: 0 0 30px rgba(0,229,255,0.15); }
+}
+.interest-card:hover, .skill-card:hover, .research-card:hover {
+    animation: glow-pulse 2s ease-in-out infinite;
+}
+
+/* --- Floating bounce for tech pills --- */
+@keyframes float-tag {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-4px); }
+}
+.tech-pill:hover {
+    animation: float-tag 0.6s ease-in-out;
+}
+
+/* --- Animated Underline for Links --- */
+.animated-link {
+    position: relative;
+    display: inline-block;
+}
+.animated-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--accent-gradient);
+    transition: width var(--motion-normal) var(--ease-out);
+}
+.animated-link:hover::after { width: 100%; }
+
+/* --- Section Grid Background --- */
+.section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+.section.in-view::before { opacity: 1; }
+
+/* --- Typewriter cursor blink --- */
+@keyframes cursor-blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+.typewriter-cursor {
+    display: inline-block;
+    width: 2px;
+    height: 1em;
+    background: var(--accent-primary);
+    margin-left: 4px;
+    animation: cursor-blink 0.8s step-end infinite;
+    vertical-align: text-bottom;
+}
+
+/* --- Magnetic button stretch --- */
+.btn-magnetic {
+    transition: transform 0.3s var(--ease-out);
+}
+
+/* --- Tilt card perspective --- */
+[data-tilt] {
+    transform-style: preserve-3d;
+    transition: transform 0.15s ease;
+}
+
+/* --- Card shine sweep --- */
+.card-shine {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        105deg,
+        transparent 30%,
+        rgba(255,255,255,0.04) 45%,
+        rgba(255,255,255,0.08) 50%,
+        rgba(255,255,255,0.04) 55%,
+        transparent 70%
+    );
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    border-radius: inherit;
+}
+.skill-card:hover .card-shine,
+.interest-card:hover .card-shine,
+.research-card:hover .card-shine,
+.contact-card:hover .card-shine {
+    opacity: 1;
+}
+
+/* --- Skill Tag Glow on hover --- */
+.skill-tag:hover {
+    box-shadow: 0 0 12px rgba(0,229,255,0.25);
+    transform: translateY(-2px) scale(1.05);
+}
+
+/* --- Stagger fade animations --- */
+@keyframes fade-in-up {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fade-in-right {
+    from { opacity: 0; transform: translateX(-30px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+@keyframes fade-in-left {
+    from { opacity: 0; transform: translateX(30px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+@keyframes scale-in {
+    from { opacity: 0; transform: scale(0.85); }
+    to { opacity: 1; transform: scale(1); }
+}
+@keyframes blur-in {
+    from { opacity: 0; filter: blur(10px); }
+    to { opacity: 1; filter: blur(0); }
+}
+
+/* --- Animated section divider --- */
+.section-divider {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(99,102,241,0.4) 20%,
+        rgba(34,211,238,0.4) 50%,
+        rgba(99,102,241,0.4) 80%,
+        transparent 100%
+    );
+    background-size: 200% 100%;
+    animation: gradient-shift 6s linear infinite;
+    margin: 0;
+}
+
+/* --- Project image parallax overlay --- */
+.project-image::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 40%, rgba(17,24,39,0.9) 100%);
+    pointer-events: none;
+    z-index: 1;
+}
+.project-image { position: relative; }
+
+/* --- Count-up highlight --- */
+.count-highlight {
+    font-family: var(--font-heading);
+    font-size: 36px;
+    font-weight: 800;
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* --- Interactive hover state for experience contributions --- */
+.exp-contribution {
+    padding: 12px;
+    border-radius: var(--radius-md);
+    transition: background var(--motion-fast) ease;
+    position: relative;
+    overflow: hidden;
+}
+.exp-contribution:hover {
+    background: rgba(99,102,241,0.06);
+}
+
+/* --- Achievement card hover glow border --- */
+.ach-card-inner::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    background: linear-gradient(135deg, rgba(99,102,241,0.3), rgba(34,211,238,0.2), transparent);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity var(--motion-normal) ease;
+}
+.ach-card-inner { position: relative; z-index: 0; }
+.ach-card-inner:hover::before { opacity: 1; }
+
+/* --- Contact card glow line --- */
+.contact-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: var(--accent-gradient);
+    transform: scaleX(0);
+    transition: transform var(--motion-normal) var(--ease-out);
+    transform-origin: left;
+}
+.contact-card:hover::before { transform: scaleX(1); }
+.contact-card { position: relative; overflow: hidden; }
+
+/* --- Scroll Progress Bar --- */
+#scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background: var(--accent-gradient);
+    z-index: 10001;
+    width: 0%;
+    transition: width 0.1s linear;
+}
+
+/* --- Floating Particles --- */
+.floating-particle {
+    position: fixed;
+    width: 4px;
+    height: 4px;
+    background: rgba(0,229,255,0.3);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* --- Nav link hover glow --- */
+.nav-link::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: var(--radius-sm);
+    background: radial-gradient(circle, rgba(0,229,255,0.15), transparent);
+    opacity: 0;
+    transition: opacity var(--motion-fast) ease;
+    pointer-events: none;
+}
+.nav-link:hover::before { opacity: 1; }
+.nav-link { position: relative; }
+
+/* --- Smooth text reveal clip --- */
+.text-reveal-clip {
+    overflow: hidden;
+    display: inline-block;
+}
+.text-reveal-clip > * {
+    display: inline-block;
+}
