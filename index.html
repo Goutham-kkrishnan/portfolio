@@ -1,20 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Goutham K Krishnan — Engineering portfolio showcasing AI systems, machine learning, and scalable software architecture.">
+    <meta name="description"
+        content="Goutham K Krishnan — Engineering portfolio showcasing AI systems, machine learning, and scalable software architecture.">
     <meta property="og:title" content="Goutham K Krishnan — Portfolio">
-    <meta property="og:description" content="Software Engineer at GadgEon Railway Systems — Pursuing M.Tech in Data Science">
+    <meta property="og:description"
+        content="Software Engineer at GadgEon Railway Systems — Pursuing M.Tech in Data Science">
     <meta property="og:type" content="website">
     <title>Goutham K Krishnan — Portfolio</title>
     <link rel="icon" type="image/png" href="assets/icons/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/animations.css">
+
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/scroll-effects.js"></script>
+    <script src="js/scenery.js"></script>
+    <script src="js/main.js"></script>
 </head>
+
 <body>
     <!-- Multi-Layered Data & Software Scenery Background -->
     <canvas id="scenery-canvas"></canvas>
@@ -23,7 +39,9 @@
     <div id="preloader">
         <div class="preloader-inner">
             <div class="preloader-text">GK</div>
-            <div class="preloader-bar"><div class="preloader-progress"></div></div>
+            <div class="preloader-bar">
+                <div class="preloader-progress"></div>
+            </div>
         </div>
     </div>
 
@@ -59,9 +77,13 @@
                 <h1 class="hero-name" data-animate="split">Goutham K Krishnan</h1>
                 <p class="hero-title anim-fade-up">Software Engineer</p>
                 <p class="hero-specializations anim-fade-up">AI &bull; Systems &bull; Software Engineering</p>
-                <p class="hero-tagline anim-fade-up">Building intelligent systems, scalable software, and tools that solve real problems.</p>
+                <p class="hero-tagline anim-fade-up">Building intelligent systems, scalable software, and tools that
+                    solve real problems.</p>
                 <div class="hero-intro anim-fade-up">
-                    <p>I am a software engineer working in the data science team while pursuing an M.Tech in Data Science and Engineering. My work focuses on designing systems that integrate machine learning, scalable infrastructure, and robust software architecture to solve real-world problems effectively.</p>
+                    <p>I am a software engineer working in the data science team while pursuing an M.Tech in Data
+                        Science and Engineering. My work focuses on designing systems that integrate machine learning,
+                        scalable infrastructure, and robust software architecture to solve real-world problems
+                        effectively.</p>
                 </div>
                 <div class="hero-tech-tags anim-fade-up">
                     <span class="tech-pill">Python</span>
@@ -99,44 +121,81 @@
                 <div class="about-content">
                     <div class="section-header">
                         <h2 class="section-title reveal-text">About Me</h2>
-                        <p class="section-subtitle reveal-text">Curiosity-driven engineer exploring intelligent systems and scalable software.</p>
+                        <p class="section-subtitle reveal-text">Curiosity-driven engineer exploring intelligent systems
+                            and scalable software.</p>
                     </div>
                     <div class="about-text reveal-text">
-                        <p>I am a software engineer working in the data science team at GadgEon Railway Systems, while simultaneously pursuing an M.Tech in Data Science and Engineering from BITS Pilani.</p>
-                        <p>What excites me most about technology is the process of turning ideas into working systems. I enjoy understanding how complex systems function internally — from machine learning models and intelligent agents to distributed infrastructures that power modern applications.</p>
-                        <p>My work often explores how different layers of technology can work together. I am particularly interested in building systems that combine machine learning for intelligent decision making, data engineering for reliable pipelines, intelligent automation through AI-driven workflows, and robust software architecture for maintainable systems.</p>
-                        <p>I enjoy working at the intersection of research and engineering, where theoretical ideas evolve into practical systems that can solve real-world problems.</p>
+                        <p>I am a software engineer working in the data science team at GadgEon Railway Systems, while
+                            simultaneously pursuing an M.Tech in Data Science and Engineering from BITS Pilani.</p>
+                        <p>What excites me most about technology is the process of turning ideas into working systems. I
+                            enjoy understanding how complex systems function internally — from machine learning models
+                            and intelligent agents to distributed infrastructures that power modern applications.</p>
+                        <p>My work often explores how different layers of technology can work together. I am
+                            particularly interested in building systems that combine machine learning for intelligent
+                            decision making, data engineering for reliable pipelines, intelligent automation through
+                            AI-driven workflows, and robust software architecture for maintainable systems.</p>
+                        <p>I enjoy working at the intersection of research and engineering, where theoretical ideas
+                            evolve into practical systems that can solve real-world problems.</p>
                     </div>
-                    <p class="about-quote reveal-text"><em>I enjoy building systems that combine intelligent algorithms with reliable software engineering.</em></p>
+                    <p class="about-quote reveal-text"><em>I enjoy building systems that combine intelligent algorithms
+                            with reliable software engineering.</em></p>
                 </div>
                 <div class="about-cards">
                     <div class="interest-card reveal-card" data-delay="0">
                         <div class="interest-icon">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 1 4 4c0 1.95-1.4 3.58-3.25 3.93L12 22"/><path d="M8 6a4 4 0 0 1 8 0"/><circle cx="12" cy="6" r="1"/><path d="M7 14l-2 4"/><path d="M17 14l2 4"/><path d="M9 18h6"/></svg>
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2a4 4 0 0 1 4 4c0 1.95-1.4 3.58-3.25 3.93L12 22" />
+                                <path d="M8 6a4 4 0 0 1 8 0" />
+                                <circle cx="12" cy="6" r="1" />
+                                <path d="M7 14l-2 4" />
+                                <path d="M17 14l2 4" />
+                                <path d="M9 18h6" />
+                            </svg>
                         </div>
                         <h3>AI Agents &amp; Autonomous Systems</h3>
-                        <p>Designing intelligent systems capable of reasoning, planning, and interacting with tools to accomplish complex tasks.</p>
+                        <p>Designing intelligent systems capable of reasoning, planning, and interacting with tools to
+                            accomplish complex tasks.</p>
                     </div>
                     <div class="interest-card reveal-card" data-delay="1">
                         <div class="interest-icon">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 16l4-8 4 5 4-9"/></svg>
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 3v18h18" />
+                                <path d="M7 16l4-8 4 5 4-9" />
+                            </svg>
                         </div>
                         <h3>Machine Learning Applications</h3>
-                        <p>Applying machine learning models to real-world problems with focus on reliability, interpretability, and system integration.</p>
+                        <p>Applying machine learning models to real-world problems with focus on reliability,
+                            interpretability, and system integration.</p>
                     </div>
                     <div class="interest-card reveal-card" data-delay="2">
                         <div class="interest-icon">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="6" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="12" cy="18" r="2"/><path d="M5 8v2a4 4 0 0 0 4 4h2"/><path d="M19 8v2a4 4 0 0 1-4 4h-2"/></svg>
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="5" cy="6" r="2" />
+                                <circle cx="19" cy="6" r="2" />
+                                <circle cx="12" cy="18" r="2" />
+                                <path d="M5 8v2a4 4 0 0 0 4 4h2" />
+                                <path d="M19 8v2a4 4 0 0 1-4 4h-2" />
+                            </svg>
                         </div>
                         <h3>Distributed Computing</h3>
-                        <p>Understanding how large-scale systems manage computation, data, and reliability across multiple machines.</p>
+                        <p>Understanding how large-scale systems manage computation, data, and reliability across
+                            multiple machines.</p>
                     </div>
                     <div class="interest-card reveal-card" data-delay="3">
                         <div class="interest-icon">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"/></svg>
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <ellipse cx="12" cy="5" rx="9" ry="3" />
+                                <path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5" />
+                                <path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3" />
+                            </svg>
                         </div>
                         <h3>Data Infrastructure</h3>
-                        <p>Building pipelines and tools that transform raw data into meaningful insights and intelligent applications.</p>
+                        <p>Building pipelines and tools that transform raw data into meaningful insights and intelligent
+                            applications.</p>
                     </div>
                 </div>
             </div>
@@ -148,13 +207,18 @@
         <div class="container">
             <div class="section-header center">
                 <h2 class="section-title reveal-text">Skills &amp; Technology Stack</h2>
-                <p class="section-subtitle reveal-text">Technologies and tools I use to design, build, and deploy intelligent systems.</p>
+                <p class="section-subtitle reveal-text">Technologies and tools I use to design, build, and deploy
+                    intelligent systems.</p>
             </div>
             <div class="skills-grid">
                 <div class="skill-card reveal-card" data-delay="0">
                     <div class="skill-card-header">
                         <div class="skill-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="4 17 10 11 4 5" />
+                                <line x1="12" y1="19" x2="20" y2="19" />
+                            </svg>
                         </div>
                         <h3>Programming</h3>
                     </div>
@@ -169,7 +233,12 @@
                 <div class="skill-card reveal-card" data-delay="1">
                     <div class="skill-card-header">
                         <div class="skill-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 1 4 4c0 1.95-1.4 3.58-3.25 3.93L12 22"/><path d="M8 6a4 4 0 0 1 8 0"/><circle cx="12" cy="6" r="1"/></svg>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2a4 4 0 0 1 4 4c0 1.95-1.4 3.58-3.25 3.93L12 22" />
+                                <path d="M8 6a4 4 0 0 1 8 0" />
+                                <circle cx="12" cy="6" r="1" />
+                            </svg>
                         </div>
                         <h3>AI &amp; Machine Learning</h3>
                     </div>
@@ -185,7 +254,11 @@
                 <div class="skill-card reveal-card" data-delay="2">
                     <div class="skill-card-header">
                         <div class="skill-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="16 18 22 12 16 6" />
+                                <polyline points="8 6 2 12 8 18" />
+                            </svg>
                         </div>
                         <h3>Software Development</h3>
                     </div>
@@ -199,7 +272,12 @@
                 <div class="skill-card reveal-card" data-delay="3">
                     <div class="skill-card-header">
                         <div class="skill-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"/></svg>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <ellipse cx="12" cy="5" rx="9" ry="3" />
+                                <path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5" />
+                                <path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3" />
+                            </svg>
                         </div>
                         <h3>Data &amp; Infrastructure</h3>
                     </div>
@@ -214,7 +292,12 @@
                 <div class="skill-card skill-card-wide reveal-card" data-delay="4">
                     <div class="skill-card-header">
                         <div class="skill-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="3" />
+                                <path
+                                    d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" />
+                            </svg>
                         </div>
                         <h3>Tools &amp; Engineering Workflow</h3>
                     </div>
@@ -226,7 +309,8 @@
                     </div>
                 </div>
             </div>
-            <p class="section-footnote reveal-text">I enjoy learning new tools quickly and selecting technologies based on the problem being solved rather than trends.</p>
+            <p class="section-footnote reveal-text">I enjoy learning new tools quickly and selecting technologies based
+                on the problem being solved rather than trends.</p>
         </div>
     </section>
 
@@ -251,22 +335,28 @@
                 <!-- Project 1 -->
                 <div class="project-card reveal-card" data-categories="ai" data-project="0">
                     <div class="project-image">
-                        <img src="https://picsum.photos/seed/aiagent/800/400" alt="Fault Analysis using Agentic AI" loading="lazy">
+                        <img src="https://picsum.photos/seed/aiagent/800/400" alt="Fault Analysis using Agentic AI"
+                            loading="lazy">
                     </div>
                     <div class="project-body">
                         <h3 class="project-title">Fault Analysis using Agentic AI</h3>
-                        <p class="project-overview">Designed a cutting-edge Generative AI system utilizing Agentic AI frameworks (CrewAI) to interpret natural language queries for system diagnostic.</p>
+                        <p class="project-overview">Designed a cutting-edge Generative AI system utilizing Agentic AI
+                            frameworks (CrewAI) to interpret natural language queries for system diagnostic.</p>
                         <div class="project-section">
                             <span class="project-label">Problem</span>
-                            <p>Traditional diagnostic systems require technical expertise to interpret complex system data. The challenge was to enable non-technical users to perform complex diagnostics via simple text prompts.</p>
+                            <p>Traditional diagnostic systems require technical expertise to interpret complex system
+                                data. The challenge was to enable non-technical users to perform complex diagnostics via
+                                simple text prompts.</p>
                         </div>
                         <div class="project-section">
                             <span class="project-label">Approach</span>
-                            <p>Built an intelligent orchestration layer where AI agents (CrewAI) analyze system data to identify faults. Utilized LLMs as the reasoning engine for planning and execution.</p>
+                            <p>Built an intelligent orchestration layer where AI agents (CrewAI) analyze system data to
+                                identify faults. Utilized LLMs as the reasoning engine for planning and execution.</p>
                         </div>
                         <div class="project-section">
                             <span class="project-label">Impact</span>
-                            <p>Demonstrated readiness to deploy LLM-based solutions in operational environments, aligning with the industry shift toward autonomous AI agents.</p>
+                            <p>Demonstrated readiness to deploy LLM-based solutions in operational environments,
+                                aligning with the industry shift toward autonomous AI agents.</p>
                         </div>
                         <div class="project-section">
                             <span class="project-label">Technologies</span>
@@ -288,18 +378,22 @@
                 <!-- Project 2 -->
                 <div class="project-card reveal-card" data-categories="ml" data-project="1">
                     <div class="project-image">
-                        <img src="https://picsum.photos/seed/mlpipeline/800/400" alt="Railway Data Analysis visualization" loading="lazy">
+                        <img src="https://picsum.photos/seed/mlpipeline/800/400"
+                            alt="Railway Data Analysis visualization" loading="lazy">
                     </div>
                     <div class="project-body">
                         <h3 class="project-title">Railway Data Analysis</h3>
-                        <p class="project-overview">Developed a Machine Learning model using SVM to predict faults in railway infrastructure with high accuracy.</p>
+                        <p class="project-overview">Developed a Machine Learning model using SVM to predict faults in
+                            railway infrastructure with high accuracy.</p>
                         <div class="project-section">
                             <span class="project-label">Approach</span>
-                            <p>Leveraged Python analytics packages for data preprocessing, feature engineering, and model validation using Support Vector Machines (SVM).</p>
+                            <p>Leveraged Python analytics packages for data preprocessing, feature engineering, and
+                                model validation using Support Vector Machines (SVM).</p>
                         </div>
                         <div class="project-section">
                             <span class="project-label">Performance</span>
-                            <p>Achieved 92% accuracy in fault prediction, showcasing the ability to translate raw sensor data into high-value predictive insights.</p>
+                            <p>Achieved 92% accuracy in fault prediction, showcasing the ability to translate raw sensor
+                                data into high-value predictive insights.</p>
                         </div>
                         <div class="project-section">
                             <span class="project-label">Technologies</span>
@@ -321,14 +415,17 @@
                 <!-- Project 3 -->
                 <div class="project-card reveal-card" data-categories="data web" data-project="2">
                     <div class="project-image">
-                        <img src="https://picsum.photos/seed/dataplatform/800/400" alt="Annotation Tool Development" loading="lazy">
+                        <img src="https://picsum.photos/seed/dataplatform/800/400" alt="Annotation Tool Development"
+                            loading="lazy">
                     </div>
                     <div class="project-body">
                         <h3 class="project-title">Annotation Tool Development</h3>
-                        <p class="project-overview">Developed a specialized data labeling platform to generate high-quality training datasets for Machine Learning models.</p>
+                        <p class="project-overview">Developed a specialized data labeling platform to generate
+                            high-quality training datasets for Machine Learning models.</p>
                         <div class="project-section">
                             <span class="project-label">Key Features</span>
-                            <p>Implemented data visualization features to enhance annotation accuracy and streamlined labeling workflows for specialized datasets.</p>
+                            <p>Implemented data visualization features to enhance annotation accuracy and streamlined
+                                labeling workflows for specialized datasets.</p>
                         </div>
                         <div class="project-section">
                             <span class="project-label">Technologies</span>
@@ -359,43 +456,81 @@
         <div class="container">
             <div class="section-header center">
                 <h2 class="section-title reveal-text">Research &amp; AI Work</h2>
-                <p class="section-subtitle reveal-text">Exploring intelligent systems, machine learning infrastructure, and data-driven intelligence.</p>
+                <p class="section-subtitle reveal-text">Exploring intelligent systems, machine learning infrastructure,
+                    and data-driven intelligence.</p>
             </div>
             <div class="research-grid">
                 <div class="research-card reveal-card" data-delay="0">
                     <div class="research-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 1 4 4c0 1.95-1.4 3.58-3.25 3.93L12 22"/><path d="M8 6a4 4 0 0 1 8 0"/><circle cx="12" cy="6" r="1"/><path d="M7 14l-2 4"/><path d="M17 14l2 4"/><path d="M9 18h6"/></svg>
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2a4 4 0 0 1 4 4c0 1.95-1.4 3.58-3.25 3.93L12 22" />
+                            <path d="M8 6a4 4 0 0 1 8 0" />
+                            <circle cx="12" cy="6" r="1" />
+                            <path d="M7 14l-2 4" />
+                            <path d="M17 14l2 4" />
+                            <path d="M9 18h6" />
+                        </svg>
                     </div>
                     <h3>AI Agents &amp; Autonomous Systems</h3>
-                    <p class="research-overview">Exploring how AI agents can perform multi-step reasoning, decision-making, and tool-based problem solving.</p>
+                    <p class="research-overview">Exploring how AI agents can perform multi-step reasoning,
+                        decision-making, and tool-based problem solving.</p>
                     <ul class="research-topics">
-                        <li><strong>Agent Architectures</strong> — LLMs as reasoning engines for planning sequences of actions</li>
-                        <li><strong>Tool Integration</strong> — Agent interaction with APIs, databases, and computational tools</li>
-                        <li><strong>Memory Systems</strong> — Contextual information storage and retrieval across tasks</li>
-                        <li><strong>Autonomous Workflows</strong> — Dynamic planning and execution of complex workflows</li>
+                        <li><strong>Agent Architectures</strong> — LLMs as reasoning engines for planning sequences of
+                            actions</li>
+                        <li><strong>Tool Integration</strong> — Agent interaction with APIs, databases, and
+                            computational tools</li>
+                        <li><strong>Memory Systems</strong> — Contextual information storage and retrieval across tasks
+                        </li>
+                        <li><strong>Autonomous Workflows</strong> — Dynamic planning and execution of complex workflows
+                        </li>
                     </ul>
                 </div>
                 <div class="research-card reveal-card" data-delay="1">
                     <div class="research-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M15 2v2"/><path d="M15 20v2"/><path d="M2 15h2"/><path d="M20 15h2"/><path d="M9 2v2"/><path d="M9 20v2"/><path d="M2 9h2"/><path d="M20 9h2"/></svg>
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="4" y="4" width="16" height="16" rx="2" />
+                            <rect x="9" y="9" width="6" height="6" />
+                            <path d="M15 2v2" />
+                            <path d="M15 20v2" />
+                            <path d="M2 15h2" />
+                            <path d="M20 15h2" />
+                            <path d="M9 2v2" />
+                            <path d="M9 20v2" />
+                            <path d="M2 9h2" />
+                            <path d="M20 9h2" />
+                        </svg>
                     </div>
                     <h3>Machine Learning Systems</h3>
-                    <p class="research-overview">Exploring how ML models can be trained, optimized, and deployed efficiently at scale.</p>
+                    <p class="research-overview">Exploring how ML models can be trained, optimized, and deployed
+                        efficiently at scale.</p>
                     <ul class="research-topics">
-                        <li><strong>Training Pipelines</strong> — Reproducible preprocessing, feature engineering, and evaluation</li>
-                        <li><strong>Model Optimization</strong> — Hyperparameter tuning, regularization, architecture design</li>
-                        <li><strong>Scalable Infrastructure</strong> — Distributed training and cloud infrastructure</li>
-                        <li><strong>Experimentation Frameworks</strong> — Iterative experimentation and model comparison</li>
+                        <li><strong>Training Pipelines</strong> — Reproducible preprocessing, feature engineering, and
+                            evaluation</li>
+                        <li><strong>Model Optimization</strong> — Hyperparameter tuning, regularization, architecture
+                            design</li>
+                        <li><strong>Scalable Infrastructure</strong> — Distributed training and cloud infrastructure
+                        </li>
+                        <li><strong>Experimentation Frameworks</strong> — Iterative experimentation and model comparison
+                        </li>
                     </ul>
                 </div>
                 <div class="research-card reveal-card" data-delay="2">
                     <div class="research-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"/></svg>
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <ellipse cx="12" cy="5" rx="9" ry="3" />
+                            <path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5" />
+                            <path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3" />
+                        </svg>
                     </div>
                     <h3>Data Intelligence</h3>
-                    <p class="research-overview">Investigating how data can be transformed into meaningful intelligence at scale.</p>
+                    <p class="research-overview">Investigating how data can be transformed into meaningful intelligence
+                        at scale.</p>
                     <ul class="research-topics">
-                        <li><strong>Large-Scale Data Processing</strong> — Transforming raw data into analyzable formats</li>
+                        <li><strong>Large-Scale Data Processing</strong> — Transforming raw data into analyzable formats
+                        </li>
                         <li><strong>Analytics Systems</strong> — Visualizations and statistical analysis tools</li>
                         <li><strong>Intelligent Data Apps</strong> — ML models combined with analytics systems</li>
                         <li><strong>Data Infrastructure</strong> — Modern large-scale data management platforms</li>
@@ -412,7 +547,8 @@
                         <div class="timeline-content">
                             <span class="timeline-year">2025</span>
                             <h4>AI Agent Experiment</h4>
-                            <p>Developed a prototype autonomous agent capable of planning tasks using LLM-based reasoning.</p>
+                            <p>Developed a prototype autonomous agent capable of planning tasks using LLM-based
+                                reasoning.</p>
                         </div>
                     </div>
                     <div class="timeline-item">
@@ -420,7 +556,8 @@
                         <div class="timeline-content">
                             <span class="timeline-year">2024</span>
                             <h4>Machine Learning Pipeline</h4>
-                            <p>Built an end-to-end ML workflow for predictive modeling with automated feature engineering.</p>
+                            <p>Built an end-to-end ML workflow for predictive modeling with automated feature
+                                engineering.</p>
                         </div>
                     </div>
                     <div class="timeline-item">
@@ -428,13 +565,15 @@
                         <div class="timeline-content">
                             <span class="timeline-year">2024</span>
                             <h4>Data Analytics Dashboard</h4>
-                            <p>Designed a system for interactive data visualization with real-time processing capabilities.</p>
+                            <p>Designed a system for interactive data visualization with real-time processing
+                                capabilities.</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <p class="section-footnote research-quote reveal-text"><em>I view research as a way to explore the boundaries of what intelligent systems can do and how they can be engineered responsibly.</em></p>
+            <p class="section-footnote research-quote reveal-text"><em>I view research as a way to explore the
+                    boundaries of what intelligent systems can do and how they can be engineered responsibly.</em></p>
         </div>
     </section>
 
@@ -443,9 +582,11 @@
         <div class="container">
             <div class="section-header center">
                 <h2 class="section-title reveal-text">Professional Experience</h2>
-                <p class="section-subtitle reveal-text">Building scalable backend systems, data pipelines, and intelligent applications in production environments.</p>
+                <p class="section-subtitle reveal-text">Building scalable backend systems, data pipelines, and
+                    intelligent applications in production environments.</p>
             </div>
-            <p class="experience-statement reveal-text">My experience focuses on building reliable backend systems, integrating data pipelines, and applying machine learning to real-world infrastructure problems.</p>
+            <p class="experience-statement reveal-text">My experience focuses on building reliable backend systems,
+                integrating data pipelines, and applying machine learning to real-world infrastructure problems.</p>
 
             <div class="experience-timeline">
                 <div class="exp-timeline-line"></div>
@@ -460,27 +601,39 @@
                             </div>
                             <span class="exp-date">Jan 2024 — Present</span>
                         </div>
-                        <p class="exp-overview">Backend-focused software engineer developing Python-based services, real-time data processing systems, and scalable APIs for enterprise applications in the railway and infrastructure domain.</p>
+                        <p class="exp-overview">Backend-focused software engineer developing Python-based services,
+                            real-time data processing systems, and scalable APIs for enterprise applications in the
+                            railway and infrastructure domain.</p>
                         <div class="exp-contributions">
                             <div class="exp-contribution">
                                 <h4>Python Development & API Engineering</h4>
-                                <p>Architected and developed scalable backend solutions using Python (Flask), transitioning legacy modules into efficient, high-performance RESTful APIs. Implemented rigorous security protocols including OAuth and JWT for robust authentication.</p>
+                                <p>Architected and developed scalable backend solutions using Python (Flask),
+                                    transitioning legacy modules into efficient, high-performance RESTful APIs.
+                                    Implemented rigorous security protocols including OAuth and JWT for robust
+                                    authentication.</p>
                             </div>
                             <div class="exp-contribution">
                                 <h4>Data Analytics Pipeline</h4>
-                                <p>Engineered data processing workflows using Python, MongoDB, and CrateDB. Optimized database queries and data retrieval algorithms, significantly reducing latency for large-volume railway asset datasets.</p>
+                                <p>Engineered data processing workflows using Python, MongoDB, and CrateDB. Optimized
+                                    database queries and data retrieval algorithms, significantly reducing latency for
+                                    large-volume railway asset datasets.</p>
                             </div>
                             <div class="exp-contribution">
                                 <h4>Machine Learning Integration</h4>
-                                <p>Collaborated on ML initiatives to analyze real-time telemetry data. Developed algorithms to identify patterns in railway assets, contributing to a predictive maintenance system reducing operational failures.</p>
+                                <p>Collaborated on ML initiatives to analyze real-time telemetry data. Developed
+                                    algorithms to identify patterns in railway assets, contributing to a predictive
+                                    maintenance system reducing operational failures.</p>
                             </div>
                             <div class="exp-contribution">
                                 <h4>Systems & Infrastructure</h4>
-                                <p>Deployed and maintained applications in an OpenSystem (Linux) environment. Utilized Docker and Kubernetes for orchestration, ensuring seamless scalability and reliability.</p>
+                                <p>Deployed and maintained applications in an OpenSystem (Linux) environment. Utilized
+                                    Docker and Kubernetes for orchestration, ensuring seamless scalability and
+                                    reliability.</p>
                             </div>
                             <div class="exp-contribution">
                                 <h4>Agile & Reporting</h4>
-                                <p>Participated in Agile development cycles and developed automated console applications for complex business report generation, bridging raw SQL data and actionable BI.</p>
+                                <p>Participated in Agile development cycles and developed automated console applications
+                                    for complex business report generation, bridging raw SQL data and actionable BI.</p>
                             </div>
                         </div>
                         <div class="exp-tech">
@@ -507,15 +660,18 @@
                             </div>
                             <span class="exp-date">Mar 2023 — May 2023</span>
                         </div>
-                        <p class="exp-overview">Backend development intern contributing to internal enterprise web applications and gaining hands-on experience with software development lifecycles.</p>
+                        <p class="exp-overview">Backend development intern contributing to internal enterprise web
+                            applications and gaining hands-on experience with software development lifecycles.</p>
                         <div class="exp-contributions">
                             <div class="exp-contribution">
                                 <h4>Backend Development</h4>
-                                <p>Developed backend components for internal web applications, focusing on database optimization and efficient data retrieval strategies.</p>
+                                <p>Developed backend components for internal web applications, focusing on database
+                                    optimization and efficient data retrieval strategies.</p>
                             </div>
                             <div class="exp-contribution">
                                 <h4>Enterprise SDLC</h4>
-                                <p>Gained foundational experience in enterprise software development lifecycles (SDLC) and version control systems (Git).</p>
+                                <p>Gained foundational experience in enterprise software development lifecycles (SDLC)
+                                    and version control systems (Git).</p>
                             </div>
                         </div>
                         <div class="exp-tech">
@@ -535,7 +691,8 @@
         <div class="container">
             <div class="section-header center">
                 <h2 class="section-title reveal-text">Achievements &amp; Leadership</h2>
-                <p class="section-subtitle reveal-text">Milestones, recognitions, and initiatives that shaped my engineering and leadership journey.</p>
+                <p class="section-subtitle reveal-text">Milestones, recognitions, and initiatives that shaped my
+                    engineering and leadership journey.</p>
             </div>
 
             <div class="achievements-timeline">
@@ -545,52 +702,78 @@
                     <div class="ach-timeline-dot"></div>
                     <div class="ach-card-inner">
                         <div class="ach-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                            </svg>
                         </div>
                         <span class="ach-year">2021 — 2023</span>
                         <h3>Project Lead — IEEE HAC/SIGHT Project</h3>
                         <p class="ach-org">IEEE Funded Project ($4000 Grant)</p>
-                        <p>Established "SIGHT Gramina Digital Hub" to provide technical training to underserved communities, leading the implementation and community engagement.</p>
+                        <p>Established "SIGHT Gramina Digital Hub" to provide technical training to underserved
+                            communities, leading the implementation and community engagement.</p>
                     </div>
                 </div>
                 <div class="achievement-card reveal-card" data-delay="1">
                     <div class="ach-timeline-dot"></div>
                     <div class="ach-card-inner">
                         <div class="ach-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                <circle cx="9" cy="7" r="4" />
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                            </svg>
                         </div>
                         <span class="ach-year">2023</span>
                         <h3>Joint Convener</h3>
                         <p class="ach-org">IHRD Tharang — National Fest</p>
-                        <p>Coordinated logistics and team collaboration for a national techno-entrepreneurial-cultural fest, fostering innovation and technical engagement.</p>
+                        <p>Coordinated logistics and team collaboration for a national techno-entrepreneurial-cultural
+                            fest, fostering innovation and technical engagement.</p>
                     </div>
                 </div>
                 <div class="achievement-card reveal-card" data-delay="2">
                     <div class="ach-timeline-dot"></div>
                     <div class="ach-card-inner">
                         <div class="ach-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5C7 4 6 9 6 9z"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5C17 4 18 9 18 9z"/><path d="M4 22h16"/><path d="M10 22V8a4 4 0 0 1 4-4h0a4 4 0 0 1 4 4v14"/><path d="M6 22V8a4 4 0 0 1 4-4"/></svg>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5C7 4 6 9 6 9z" />
+                                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5C17 4 18 9 18 9z" />
+                                <path d="M4 22h16" />
+                                <path d="M10 22V8a4 4 0 0 1 4-4h0a4 4 0 0 1 4 4v14" />
+                                <path d="M6 22V8a4 4 0 0 1 4-4" />
+                            </svg>
                         </div>
                         <span class="ach-year">2023</span>
                         <h3>Runner-Up — Best Project in CS</h3>
                         <p class="ach-org">SRISHTI 2023</p>
-                        <p>Recognized for developing a technically innovative project demonstrating strong engineering design, implementation depth, and real-world applicability.</p>
+                        <p>Recognized for developing a technically innovative project demonstrating strong engineering
+                            design, implementation depth, and real-world applicability.</p>
                     </div>
                 </div>
                 <div class="achievement-card reveal-card" data-delay="3">
                     <div class="ach-timeline-dot"></div>
                     <div class="ach-card-inner">
                         <div class="ach-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <polygon
+                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                            </svg>
                         </div>
                         <span class="ach-year">2021</span>
                         <h3>Best SIGHT Group of the Year</h3>
                         <p class="ach-org">IEEE SIGHT Awards 2021</p>
-                        <p>Part of the team recognized for impactful humanitarian and community-driven initiatives in technology-driven social impact and collaborative engagement.</p>
+                        <p>Part of the team recognized for impactful humanitarian and community-driven initiatives in
+                            technology-driven social impact and collaborative engagement.</p>
                     </div>
                 </div>
             </div>
-            <p class="section-footnote reveal-text"><em>Leadership experiences have helped me understand that impactful technology is built not only through engineering skill, but also through collaboration, initiative, and community engagement.</em></p>
+            <p class="section-footnote reveal-text"><em>Leadership experiences have helped me understand that impactful
+                    technology is built not only through engineering skill, but also through collaboration, initiative,
+                    and community engagement.</em></p>
         </div>
     </section>
 
@@ -601,15 +784,18 @@
                 <div class="resume-content reveal-text">
                     <div class="section-header">
                         <h2 class="section-title">Resume</h2>
-                        <p class="section-subtitle">A snapshot of my technical background, education, and engineering focus.</p>
+                        <p class="section-subtitle">A snapshot of my technical background, education, and engineering
+                            focus.</p>
                     </div>
                     <div class="resume-highlights">
                         <div class="resume-block">
                             <h4>Education</h4>
-                             <p><strong>M.Tech in Data Science and Engineering (Ongoing)</strong><br>BITS Pilani (Work Integrated Learning Programme)</p>
-                             <p><strong>B.Tech in Computer Science and Engineering | 2019 - 2023</strong><br>APJ Abdul Kalam Technological University | Score: 87.5%</p>
-                             <p><strong>Higher Secondary Education | 2019</strong><br>CBSE | Score: 89.6%</p>
-                             <p><strong>Secondary Education | 2017</strong><br>CBSE | CGPA: 10.0</p>
+                            <p><strong>M.Tech in Data Science and Engineering (Ongoing)</strong><br>BITS Pilani (Work
+                                Integrated Learning Programme)</p>
+                            <p><strong>B.Tech in Computer Science and Engineering | 2019 - 2023</strong><br>APJ Abdul
+                                Kalam Technological University | Score: 87.5%</p>
+                            <p><strong>Higher Secondary Education | 2019</strong><br>CBSE | Score: 89.6%</p>
+                            <p><strong>Secondary Education | 2017</strong><br>CBSE | CGPA: 10.0</p>
                         </div>
                         <div class="resume-block">
                             <h4>Engineering Focus</h4>
@@ -626,7 +812,13 @@
                 <div class="resume-card-wrap reveal-card">
                     <div class="resume-download-card">
                         <div class="resume-card-icon">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                <polyline points="14 2 14 8 20 8" />
+                                <line x1="12" y1="18" x2="12" y2="12" />
+                                <polyline points="9 15 12 18 15 15" />
+                            </svg>
                         </div>
                         <h3>Download Full Resume</h3>
                         <p class="resume-format">PDF — Updated 2026</p>
@@ -651,12 +843,19 @@
                         <h2 class="section-title">Contact</h2>
                         <p class="section-subtitle">Let's connect and build interesting things together.</p>
                     </div>
-                    <p class="contact-message">I'm always interested in discussing ideas around artificial intelligence systems, machine learning research, and scalable software engineering. Whether it's a conversation about new technologies, collaboration on a project, or opportunities to build impactful systems, I'm always open to connecting.</p>
+                    <p class="contact-message">I'm always interested in discussing ideas around artificial intelligence
+                        systems, machine learning research, and scalable software engineering. Whether it's a
+                        conversation about new technologies, collaboration on a project, or opportunities to build
+                        impactful systems, I'm always open to connecting.</p>
                 </div>
                 <div class="contact-cards">
                     <a href="mailto:gouthamkkrishnan2024@gmail.com" class="contact-card reveal-card" data-delay="0">
                         <div class="contact-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <rect x="2" y="4" width="20" height="16" rx="2" />
+                                <path d="M22 7l-10 7L2 7" />
+                            </svg>
                         </div>
                         <h4>Email</h4>
                         <p>gouthamkkrishnan2024@gmail.com</p>
@@ -664,22 +863,38 @@
                     </a>
                     <div class="contact-card reveal-card" data-delay="1">
                         <div class="contact-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                            </svg>
                         </div>
                         <h4>Phone</h4>
                         <p>+91 9074891632</p>
                     </div>
-                    <a href="https://www.linkedin.com/in/goutham-kkrishnan" class="contact-card reveal-card" data-delay="2" target="_blank">
+                    <a href="https://www.linkedin.com/in/goutham-kkrishnan" class="contact-card reveal-card"
+                        data-delay="2" target="_blank">
                         <div class="contact-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect x="2" y="9" width="4" height="12" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg>
                         </div>
                         <h4>LinkedIn</h4>
                         <p>Connect professionally</p>
                         <span class="contact-action">Connect on LinkedIn &rarr;</span>
                     </a>
-                    <a href="https://github.com/goutham-k-krishnan" class="contact-card reveal-card" data-delay="3" target="_blank">
+                    <a href="https://github.com/goutham-k-krishnan" class="contact-card reveal-card" data-delay="3"
+                        target="_blank">
                         <div class="contact-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                            </svg>
                         </div>
                         <h4>GitHub</h4>
                         <p>Explore projects</p>
@@ -733,13 +948,7 @@
         </div>
     </div>
 
-    <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
-    <script src="js/animations.js"></script>
-    <script src="js/scroll-effects.js"></script>
-    <script src="js/scenery.js"></script>
-    <script src="js/main.js"></script>
+
 </body>
+
 </html>
