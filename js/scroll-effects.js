@@ -364,6 +364,13 @@ function initProjectFilter() {
                     });
                 }
             });
+
+            // Refresh ScrollTrigger after cards are hidden (0.3s duration + buffer)
+            setTimeout(() => {
+                if (typeof ScrollTrigger !== 'undefined') {
+                    ScrollTrigger.refresh();
+                }
+            }, 350);
         });
     });
 }
